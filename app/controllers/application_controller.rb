@@ -18,7 +18,6 @@ class ApplicationController < Sinatra::Base
     if @user
           session[:user_id] = @user.id
           redirect to '/account'
-
         end
     # If there is no match, render the error page.
     erb :error
@@ -26,7 +25,6 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
     erb :account
-
   end
 
   get '/logout' do
