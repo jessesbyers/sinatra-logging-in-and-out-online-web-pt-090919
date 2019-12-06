@@ -1,8 +1,8 @@
 class Helpers
 
   def self.current_user(session)
-    id = session[:user_id]
-    user = User.find(id)
+    # id = 
+    user = User.find(session[:user_id])
     user
   end
 
