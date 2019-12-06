@@ -12,9 +12,9 @@
 <%current_user = Helpers.current_user(session)%>
 
     <h1>Account Details for <%=current_user.username%></h1>
-    <p>Username: <%=@user.username%></p>
-    <p>Password: <%=@user.password%></p>
-    <p>Balance: <%=@user.balance%></p>
+    <p>Username: <%=current_user.username%></p>
+    <p>Password: <%=current_user.password%></p>
+    <p>Balance: <%=current_user.balance%></p>
 
     <%else%>
     <a href="/">Return to Home Page</a>
