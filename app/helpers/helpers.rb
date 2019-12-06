@@ -6,6 +6,7 @@ class Helpers
 
   def self.is_logged_in?(session)
     session.include?(session[:user_id])
+    binding.pry
   end
 
 # return true if the user_id is in the session hash and false if not.
