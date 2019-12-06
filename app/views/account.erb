@@ -9,9 +9,9 @@
 <% if Helper.is_logged_in?%>
 
 <h1>TEST</h1>
-<%user = Helper.current_user(session)%>
+<%current_user = Helper.current_user(session)%>
 
-    <h1>Account Details for <%=user.username%></h1>
+    <h1>Account Details for <%=current_user.username%></h1>
     <p>Username: <%=@user.username%></p>
     <p>Password: <%=@user.password%></p>
     <p>Balance: <%=@user.balance%></p>
