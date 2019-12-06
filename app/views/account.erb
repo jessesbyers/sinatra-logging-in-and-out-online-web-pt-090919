@@ -10,7 +10,7 @@
 <% if Helpers.is_logged_in?(session)%>
     <%current_user = Helpers.current_user(session)%>
 
-    <h1>Account Details for <%=current_user.username%></h1>
+    <h1>Welcome <%=current_user.username%></h1>
     <p>Username: <%=current_user.username%></p>
     <p>Password: <%=current_user.password%></p>
     <p>Balance: <%=current_user.balance%></p>
